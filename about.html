@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | Mark Roe</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0px;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Georgia', serif;
+      background: #fff;
+      color: #222;
+      overflow: hidden;
+    }
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  padding: 0 40px;
+  font-size: 1.55rem;
+  color: #666;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #666;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: calc(100vh - 80px);
+      padding: 40px 60px;
+    }
+
+    .text-section {
+      max-width: 55%;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #666;
+      padding-bottom: 8px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 16px 0;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #444;
+    }
+
+    .image-section {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: -10px; /* Moves the whole image section upward slightly */
+    }
+
+    .profile-pic {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #666;
+      margin-bottom: 20px;
+    }
+
+    .logo-row {
+      display: flex;
+      gap: 70px;
+      justify-content: center;
+    }
+
+    .logo-row img {
+      width: 100px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 4px; /* Just a gentle curve, not circular */
+    }
+.logo-solo {
+  margin-top: 20px;
+}
+
+.logo-solo img {
+  width: 260px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+  </style>
+</head>
+<body>
+<nav>
+  <a href="about.html" title="Learn more about me">About</a>
+  <a href="portfolio.html" title="View my project work">Portfolio</a>
+  <a href="cv.html" title="See my academic and work history">CV</a>
+  <a href="contact.html" title="Get in touch">Contact</a>
+</nav>
+  <div class="container">
+    <div class="text-section">
+      <h1>About Me</h1>
+      <p>
+        I’m <span class="highlight">Mark Roe</span>, a third-year undergraduate studying Physics & Instrumentation at 
+        Atlantic Technological University, Galway. My academic path began at Trinity College Dublin (<span class="highlight">TCD</span>), where I 
+        studied pure physics before transferring to <span class="highlight">ATU</span> to focus more deeply on instrumentation and computation.
+      </p>
+      <p>
+        I’m currently undertaking a summer research placement at the Centre for Astronomy, University of Galway (<span class="highlight">UG</span>),
+        working on simulations for the Extremely Large Telescope and its MORFEO adaptive optics system.
+      </p>
+      <p>
+        My academic interests span theoretical physics, chaotic systems, and scientific instrumentation. I’ve built
+        various small-scale projects, such as a prototype fridge sensor and a beam deflection analysis system using
+        strain gauges.
+      </p>
+      <p>
+        This site is a space to share my work, essays, and ideas — and to document the process of becoming a physicist.
+      </p>
+    </div>
+
+<div class="image-section">
+  <img src="me.jpg" alt="Mark Roe" class="profile-pic" title="This is me — Mark Roe" />
+  
+  <div class="logo-row">
+    <img src="atu.png" alt="ATU logo" title="Atlantic Technological University" />
+    <img src="tcd.png" alt="Trinity logo" title="Trinity College Dublin" />
+    <img src="ug.png" alt="Galway logo" title="University of Galway" />
+  </div>
+  
+  <div class="logo-solo">
+    <img src="CFA.jpg" alt="Centre for Astronomy logo" title="Centre for Astronomy, University of Galway" />
+  </div>
+</div>
+</body>
+</html>
+
+
+

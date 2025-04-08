@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Roe | Physics Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fefefe;
+      font-family: 'Georgia', serif;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  padding: 0 40px;
+  font-size: 1.55rem;
+  color: #666;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #666;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      margin: 20px 0;
+      position: relative;
+      padding: 0px 0;
+    }
+    .hero h1::before,
+    .hero h1::after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 400px;
+      background-color: #666;
+      margin: 10px auto;
+    }
+    .hero h2 {
+      font-weight: normal;
+      font-size: 1.25rem;
+      color: #666;
+      margin: 30px 0;
+    }
+    .hero p {
+      color: #555;
+      font-size: 1.25rem;
+      margin-top: 10px;
+    }
+    .hero .enter {
+      margin-top: 0px;
+      font-size: 0.95rem;
+      color: #000;
+      cursor: pointer;
+    }
+    .hero .enter:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="about.html" title="Learn more about me">About</a>
+  <a href="portfolio.html" title="View my project work">Portfolio</a>
+  <a href="cv.html" title="See my academic and work history">CV</a>
+  <a href="contact.html" title="Get in touch">Contact</a>
+</nav>
+
+  <div class="hero">
+    <h1>Mark Roe</h1>
+    <h2>- Current Physics & Instrumentation Student at ATU -</h2>
+    <p>Welcome to my personal page! Here you can find my CV, Portfolio, and various other pieces of work. Feel free to have a look around and get in touch.</p>
+  </div>
+</body>
+</html>

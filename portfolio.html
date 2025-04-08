@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio | Mark Roe</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: #fff;
+      color: #222;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 80px;
+      padding: 0 40px;
+      font-size: 1.55rem;
+      color: #666;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #666;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    .portfolio-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      border-bottom: 2px solid #666;
+      padding-bottom: 10px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .project {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 40px;
+    }
+
+    .project img {
+      width: 180px;
+      height: auto;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      flex: 1;
+    }
+
+    .project-content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .project-content h2 a {
+      text-decoration: none;
+      color: #222;
+    }
+
+    .project-content h2 a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .project-content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .tags {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="about.html" title="Learn more about me">About</a>
+    <a href="portfolio.html" title="View my project work">Portfolio</a>
+    <a href="cv.html" title="See my academic and work history">CV</a>
+    <a href="contact.html" title="Get in touch">Contact</a>
+  </nav>
+
+  <div class="portfolio-container">
+    <h1>Project Portfolio</h1>
+
+    <div class="project">
+      <img src="BetterScan1.png" alt="Surface Profilometer" />
+      <div class="project-content">
+        <h2><a href="profilometer.html">Surface Profilometer</a></h2>
+        <p>Fully realized design team project, where a Surface Profilometer was designed, constructed and tested for the purpose of producing 3D topographies.</p>
+        <p class="tags">Tags: Lab Instrumentation, Report Writing, MATLAB</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="elt.jpg" alt="MORFEO Simulation" />
+      <div class="project-content">
+        <h2><a href="morfeo.html">MORFEO Instrument Project</a></h2>
+        <p>Summer placement work on the simulation and optical analysis of the MORFEO adaptive optics system for the ELT. Focus on image modeling, resolution, and AO behavior.</p>
+        <p class="tags">Tags: Python, Astronomy, Research Placement</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="essay.jpg" alt="General Essays" />
+      <div class="project-content">
+        <h2><a href="essays.html">General Essays</a></h2>
+        <p>A selection of short essays and reflections, covering topics in physics, philosophy of science, and scientific history.</p>
+        <p class="tags">Tags: Philosophy of Science, Education</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="report.png" alt="Report Work Examples" />
+      <div class="project-content">
+        <h2><a href="reports.html">Report-Work Examples</a></h2>
+        <p>A curated group of past academic reports, showcasing formal lab writing, structured data analysis, and uncertainty analysis using LaTeX.</p>
+        <p class="tags">Tags: LaTeX, Python, Origin</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
+
