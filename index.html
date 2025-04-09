@@ -108,15 +108,20 @@
       margin: 10px auto 0 auto;
     }
 
-    .gif-above-title {
-      position: absolute;
-      top: 0px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 220px;
-      height: auto;
-      pointer-events: none;
-    }
+h1 {
+  position: relative;
+}
+
+.gif-above-title {
+  position: absolute;
+  top: -120px; /* adjust this to control spacing */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: auto;
+  pointer-events: none;
+}
+
 
     .gif-center {
       width: 80px;
@@ -168,8 +173,11 @@
   </nav>
 
   <div class="hero">
-    <img src="log.gif" class="gif-above-title" alt="Log spiral animation" />
-    <h1>Mark Roe</h1>
+<h1>
+  <img src="log.gif" class="gif-above-title" alt="Log spiral animation" />
+  Mark Roe
+</h1>
+
     <h2>- Current Physics & Instrumentation Student at ATU -</h2>
     <p>Welcome to my personal page! Here you can find my CV, Portfolio, and various other pieces of work. Feel free to have a look around and get in touch.</p>
     <img src="atom.gif" class="gif-center" alt="Atom animation" />
