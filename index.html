@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-14HMNXG7DB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-14HMNXG7DB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-14HMNXG7DB');
+  </script>
 
-  gtag('config', 'G-14HMNXG7DB');
-</script>
-<!-- Light mode favicon -->
-<link rel="icon" href="favicon.ico" media="(prefers-color-scheme: light)">
-
-<!-- Dark mode favicon -->
-<link rel="icon" href="favicon-white.ico" media="(prefers-color-scheme: dark)">
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.ico" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="favicon-white_final.ico" media="(prefers-color-scheme: dark)">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mark Roe | Physics Portfolio</title>
+
   <style>
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 1rem;
-  z-index: 1000;
-}
-
-.site-logo {
-  height: 80px; /* adjust as needed */
-  width: auto;
-  display: block;
-}
-
     body {
       margin: 0;
       padding: 0;
@@ -42,9 +27,21 @@ header {
       color: #222;
       display: flex;
       flex-direction: column;
-      height: 100vh;
-      overflow: hidden;
-      position: relative;
+      min-height: 100vh;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 1rem 1.5rem;
+      z-index: 1000;
+    }
+
+    .site-logo {
+      height: 80px;
+      width: auto;
+      display: block;
     }
 
     nav {
@@ -75,6 +72,7 @@ header {
       align-items: center;
       text-align: center;
       position: relative;
+      padding: 2rem;
     }
 
     .hero h1 {
@@ -82,7 +80,6 @@ header {
       font-size: 4rem;
       margin: 30px 0;
       position: relative;
-      padding: 0px 0;
     }
 
     .hero h1::before,
@@ -105,11 +102,12 @@ header {
     .hero p {
       color: #555;
       font-size: 1.25rem;
-      margin-top: 10px;
+      max-width: 900px;
+      margin: 10px auto 0 auto;
     }
 
     .hero .enter {
-      margin-top: 0px;
+      margin-top: 1rem;
       font-size: 0.95rem;
       color: #000;
       cursor: pointer;
@@ -129,14 +127,13 @@ header {
 
     .gif-above-title {
       position: absolute;
-      top: 0;
+      top: 120px;
       left: 50%;
       transform: translateX(-50%);
       width: 220px;
       height: auto;
       opacity: 1;
       pointer-events: none;
-      margin-top: 120px;
     }
 
     @keyframes float {
@@ -144,24 +141,42 @@ header {
       50% { transform: translateY(-6px); }
       100% { transform: translateY(0); }
     }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .hero h1::before,
+      .hero h1::after {
+        width: 60%;
+      }
+
+      .gif-above-title {
+        width: 180px;
+        top: 110px;
+      }
+    }
   </style>
 </head>
 <body>
-<header>
-  <a href="index.html">
-    <img src="logo.png" alt="Logo" class="site-logo">
-  </a>
-</header>
+  <header>
+    <a href="index.html">
+      <img src="logo.png" alt="Logo" class="site-logo">
+    </a>
+  </header>
 
   <nav>
-    <a href="index.html" title="Return to the homepage">Home</a>
-    <a href="about.html" title="Learn more about me">About</a>
-    <a href="portfolio.html" title="View my project work">Portfolio</a>
-    <a href="cv.html" title="See my academic and work history">CV</a>
-    <a href="contact.html" title="Get in touch">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- GIF Above Name -->
   <img src="log.gif" class="gif-above-title" alt="Log spiral animation" />
 
   <div class="hero">
