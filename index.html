@@ -8,33 +8,35 @@
     body {
       margin: 0;
       padding: 0;
-      background: #fefefe;
+      background: #fdfdfb;
       font-family: 'Georgia', serif;
       color: #222;
       display: flex;
       flex-direction: column;
       height: 100vh;
       overflow: hidden;
+      position: relative;
     }
-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 80px;
-  padding: 0 40px;
-  font-size: 1.55rem;
-  color: #666;
-}
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #666;
-}
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 80px;
+      padding: 0 40px;
+      font-size: 1.55rem;
+      color: #666;
+    }
 
-nav a:hover {
-  color: #000;
-}
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #666;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
 
     .hero {
       flex: 1;
@@ -43,13 +45,16 @@ nav a:hover {
       justify-content: center;
       align-items: center;
       text-align: center;
+      position: relative;
     }
+
     .hero h1 {
       font-size: 4rem;
       margin: 30px 0;
       position: relative;
       padding: 0px 0;
     }
+
     .hero h1::before,
     .hero h1::after {
       content: "";
@@ -59,41 +64,76 @@ nav a:hover {
       background-color: #666;
       margin: 10px auto;
     }
+
     .hero h2 {
       font-weight: normal;
       font-size: 1.25rem;
       color: #666;
       margin: 30px 0;
     }
+
     .hero p {
       color: #555;
       font-size: 1.25rem;
       margin-top: 10px;
     }
+
     .hero .enter {
       margin-top: 0px;
       font-size: 0.95rem;
       color: #000;
       cursor: pointer;
     }
+
     .hero .enter:hover {
       text-decoration: underline;
+    }
+
+    .gif-center {
+      width: 80px;
+      height: auto;
+      margin-top: 25px;
+      animation: float 3s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    .gif-above-title {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 220px;
+      height: auto;
+      opacity: 1;
+      pointer-events: none;
+      margin-top: 120px;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-<nav>
-  <a href="index.html" title="Return to the homepage">Home</a>
-  <a href="about.html" title="Learn more about me">About</a>
-  <a href="portfolio.html" title="View my project work">Portfolio</a>
-  <a href="cv.html" title="See my academic and work history">CV</a>
-  <a href="contact.html" title="Get in touch">Contact</a>
-</nav>
+  <nav>
+    <a href="index.html" title="Return to the homepage">Home</a>
+    <a href="about.html" title="Learn more about me">About</a>
+    <a href="portfolio.html" title="View my project work">Portfolio</a>
+    <a href="cv.html" title="See my academic and work history">CV</a>
+    <a href="contact.html" title="Get in touch">Contact</a>
+  </nav>
+
+  <!-- GIF Above Name -->
+  <img src="log.gif" class="gif-above-title" alt="Log spiral animation" />
 
   <div class="hero">
     <h1>Mark Roe</h1>
     <h2>- Current Physics & Instrumentation Student at ATU -</h2>
     <p>Welcome to my personal page! Here you can find my CV, Portfolio, and various other pieces of work. Feel free to have a look around and get in touch.</p>
+    <img src="atom.gif" class="gif-center" alt="Atom animation" />
   </div>
 </body>
 </html>
+
