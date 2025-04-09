@@ -73,6 +73,7 @@
       text-align: center;
       position: relative;
       padding: 2rem;
+      margin-top: 100px;
     }
 
     .hero h1 {
@@ -80,6 +81,7 @@
       font-size: 4rem;
       margin: 30px 0;
       position: relative;
+      padding: 0;
     }
 
     .hero h1::before,
@@ -106,15 +108,14 @@
       margin: 10px auto 0 auto;
     }
 
-    .hero .enter {
-      margin-top: 1rem;
-      font-size: 0.95rem;
-      color: #000;
-      cursor: pointer;
-    }
-
-    .hero .enter:hover {
-      text-decoration: underline;
+    .gif-above-title {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 220px;
+      height: auto;
+      pointer-events: none;
     }
 
     .gif-center {
@@ -122,17 +123,6 @@
       height: auto;
       margin-top: 25px;
       animation: float 3s ease-in-out infinite;
-      pointer-events: none;
-    }
-
-    .gif-above-title {
-      position: absolute;
-      top: 120px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 220px;
-      height: auto;
-      opacity: 1;
       pointer-events: none;
     }
 
@@ -157,7 +147,7 @@
 
       .gif-above-title {
         width: 180px;
-        top: 110px;
+        top: -80px;
       }
     }
   </style>
@@ -177,9 +167,8 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <img src="log.gif" class="gif-above-title" alt="Log spiral animation" />
-
   <div class="hero">
+    <img src="log.gif" class="gif-above-title" alt="Log spiral animation" />
     <h1>Mark Roe</h1>
     <h2>- Current Physics & Instrumentation Student at ATU -</h2>
     <p>Welcome to my personal page! Here you can find my CV, Portfolio, and various other pieces of work. Feel free to have a look around and get in touch.</p>
@@ -187,4 +176,5 @@
   </div>
 </body>
 </html>
+
 
