@@ -10,11 +10,30 @@
 
   gtag('config', 'G-14HMNXG7DB');
 </script>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- Light mode favicon -->
+<link rel="icon" href="favicon.ico" media="(prefers-color-scheme: light)">
+
+<!-- Dark mode favicon -->
+<link rel="icon" href="favicon-white.ico" media="(prefers-color-scheme: dark)">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mark Roe | Physics Portfolio</title>
   <style>
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.site-logo {
+  height: 80px; /* adjust as needed */
+  width: auto;
+  display: block;
+}
+
     body {
       margin: 0;
       padding: 0;
@@ -128,6 +147,12 @@
   </style>
 </head>
 <body>
+<header>
+  <a href="index.html">
+    <img src="logo.png" alt="Logo" class="site-logo">
+  </a>
+</header>
+
   <nav>
     <a href="index.html" title="Return to the homepage">Home</a>
     <a href="about.html" title="Learn more about me">About</a>
