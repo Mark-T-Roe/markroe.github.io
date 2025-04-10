@@ -120,29 +120,8 @@
       font-size: 0.95rem;
       color: #555;
     }
+
 @media (max-width: 768px) {
-  .project,
-  .doc-entry,
-  .meta {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .project img,
-  .doc-preview img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .doc-info {
-    text-align: center;
-  }
-
-  .meta-item {
-    width: 100%;
-    margin-bottom: 20px;
-  }
   header {
     position: static;
     width: 100%;
@@ -151,10 +130,54 @@
   }
 
   .site-logo {
-    height: 60px; /* optional: reduce slightly for mobile */
+    height: 60px;
     margin: 0 auto;
   }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  .portfolio-container {
+    padding: 100px 20px 40px 20px;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .project img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .project-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-content p {
+    font-size: 1.05rem;
+    padding: 0 10px;
+  }
+
+  .tags {
+    font-size: 0.95rem;
+  }
 }
+
 
   </style>
 </head>

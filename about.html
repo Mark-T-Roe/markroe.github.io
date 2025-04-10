@@ -146,19 +146,47 @@
     }
 
 @media (max-width: 768px) {
+  header {
+    position: static;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .site-logo {
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
   .container {
     flex-direction: column;
     align-items: center;
-    height: auto; /* allow natural flow */
-    padding: 20px;
-    padding-top: 100px;
+    height: auto;
+    padding: 100px 20px 40px 20px;
   }
 
-  .text-section,
   .image-section {
-    max-width: 100%;
     width: 100%;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .text-section {
+    width: 100%;
+    max-width: 100%;
     text-align: center;
+  }
+
+  .about-title {
+    font-size: 2rem;
   }
 
   .profile-pic {
@@ -169,23 +197,23 @@
   .logo-row {
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
+  }
+
+  .logo-row img {
+    width: 80px;
   }
 
   .logo-solo img {
     width: 200px;
   }
-  header {
-    position: static;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-  }
 
-  .site-logo {
-    height: 60px; /* optional: reduce slightly for mobile */
-    margin: 0 auto;
+  p {
+    font-size: 1.05rem;
+    padding: 0 10px;
   }
 }
+
 
 
   </style>

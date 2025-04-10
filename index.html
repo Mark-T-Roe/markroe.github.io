@@ -137,48 +137,7 @@
       100% { transform: translateY(0); }
     }
 
-    @media (max-width: 768px) {
-      nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 1rem;
-        font-size: 1.2rem;
-      }
-
-      .hero h1::before,
-      .hero h1::after {
-        width: 60%;
-      }
-
-      .gif-above-title {
-        width: 180px;
-        top: -80px;
-      }
-
-    }
 @media (max-width: 768px) {
-  .project,
-  .doc-entry,
-  .meta {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .project img,
-  .doc-preview img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .doc-info {
-    text-align: center;
-  }
-
-  .meta-item {
-    width: 100%;
-    margin-bottom: 20px;
-  }
   header {
     position: static;
     width: 100%;
@@ -187,10 +146,55 @@
   }
 
   .site-logo {
-    height: 60px; /* optional: reduce slightly for mobile */
+    height: 60px;
     margin: 0 auto;
   }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .hero {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+    margin: 20px 0;
+  }
+
+  .hero h1::before,
+  .hero h1::after {
+    width: 60%;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+    margin: 15px 0;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .gif-above-title {
+    width: 160px;
+    top: -60px;
+  }
+
+  .gif-center {
+    width: 60px;
+    margin-top: 15px;
+  }
 }
+
 
   </style>
 </head>
