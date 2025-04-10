@@ -120,6 +120,31 @@
       font-size: 0.95rem;
       color: #555;
     }
+@media (max-width: 768px) {
+  .project,
+  .doc-entry,
+  .meta {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project img,
+  .doc-preview img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .doc-info {
+    text-align: center;
+  }
+
+  .meta-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
   </style>
 </head>
 <body>
