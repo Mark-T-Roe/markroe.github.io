@@ -144,30 +144,49 @@
       object-fit: contain;
       border-radius: 4px;
     }
+
 @media (max-width: 768px) {
-  .project,
-  .doc-entry,
-  .meta {
+  .container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    height: auto; /* allow natural flow */
+    padding: 20px;
+    padding-top: 100px;
   }
 
-  .project img,
-  .doc-preview img {
+  .text-section,
+  .image-section {
     max-width: 100%;
-    height: auto;
-  }
-
-  .doc-info {
+    width: 100%;
     text-align: center;
   }
 
-  .meta-item {
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .logo-row {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .logo-solo img {
+    width: 200px;
+  }
+  header {
+    position: static;
     width: 100%;
-    margin-bottom: 20px;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .site-logo {
+    height: 60px; /* optional: reduce slightly for mobile */
+    margin: 0 auto;
   }
 }
+
 
   </style>
 </head>
