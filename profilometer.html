@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surface Profilometer | Mark Roe</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: #fdfdfb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 1rem 1.5rem;
+      z-index: 1000;
+    }
+
+    .site-logo {
+      height: 80px;
+      width: auto;
+      display: block;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 80px;
+      padding: 0 40px;
+      font-size: 1.55rem;
+      color: #666;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #666;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 15px auto 60px auto;
+      padding: 0 1.5rem;
+    }
+
+    h1 {
+      margin: 55px auto 30px auto;
+      font-variant: small-caps;
+      font-size: 2.8rem;
+      border-bottom: 2px solid #666;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 50px;
+      border-bottom: 2px solid rgba(102, 102, 102, 0.5);
+      border-top: 2px solid rgba(102, 102, 102, 0.5);
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 50px;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 1.2rem;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: -50px;
+      padding: 0 1rem;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #444;
+      flex: 1 1 30%;
+      width: 100px;
+    }
+
+    .meta-item img {
+      height: 150px;
+      margin-bottom: 10px;
+      opacity: 1;
+    }
+
+    .meta-label {
+      font-weight: 600;
+      text-decoration: underline;
+      margin: 8px 0;
+    }
+
+    .doc-entry {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      gap: 30px;
+    }
+
+    .doc-info {
+      flex: 1;
+    }
+
+    .doc-info h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    .doc-info p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .doc-info a.button {
+      display: inline-block;
+      padding: 6px 12px;
+      background-color: #444;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .doc-preview img {
+      max-width: 250px;
+      height: auto;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .timeline {
+      margin-bottom: 60px;
+    }
+
+    .gantt-img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: auto;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        justify-content: center;
+        font-size: 1rem;
+        flex-wrap: wrap;
+        padding: 1rem;
+      }
+
+      .meta {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .meta-item img {
+        height: 80px;
+      }
+
+      .doc-entry {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .doc-preview img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="assets/logos/logo.png" alt="Logo" class="site-logo">
+    </a>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="content">
+    <h1>Surface Profilometer</h1>
+
+    <section class="overview">
+      <h2>Project Overview</h2>
+      <p>The goal of this project was to design, build, and calibrate a working surface profilometer using a repurposed 3D printer frame as the mechanical base. The device uses a cantilever system with strain gauge feedback to perform precise raster scans of a surface, producing 3D height data that can be visualized in MATLAB.</p>
+      <p>This setup also incorporated stepper motor control, instrumentation amplification, and LabVIEW integration. The final result was a fully functional proof-of-concept, built from scratch and capable of repeatable surface scans within the expected precision limits. The project balanced mechanical ingenuity, circuit design, and software coordination — all packaged into a compact, student-made metrology system.</p>
+    </section>
+
+    <section class="meta">
+      <div class="meta-item">
+        <img src="assets/icons/person.png" alt="Contributor icon" />
+        <div class="meta-label">Contributors</div>
+        <div>Mark Roe<br>Nicole Murray<br>Niall Linnane</div>
+      </div>
+      <div class="meta-item">
+        <img src="assets/icons/calendar.png" alt="Calendar icon" />
+        <div class="meta-label">Date</div>
+        <div>January – March 2025</div>
+      </div>
+      <div class="meta-item">
+        <img src="assets/icons/clock.png" alt="Clock icon" />
+        <div class="meta-label">Duration</div>
+        <div>9 weeks</div>
+      </div>
+    </section>
+
+    <section class="assets">
+      <h2>Documents</h2>
+
+      <div class="doc-entry">
+        <div class="doc-info">
+          <h3>Final Thesis</h3>
+          <p>The thesis offers a full write-up of the project from first principles to final testing. It outlines the design decisions, challenges in strain gauge configuration, amplifier calibration, and signal handling. The document also includes full circuit schematics, mechanical layout, data plots, and reflections on what worked (and what didn’t).</p>
+          <p class="author">Author: Mark Roe</p>
+          <a href="assets/pdfs/IDT Project - Thesis - Mark Roe.pdf" class="button" target="_blank">Download PDF</a>
+        </div>
+        <div class="doc-preview">
+          <img src="assets/previews/thesis-preview.png" alt="Preview of thesis first page" />
+        </div>
+      </div>
+
+      <div class="doc-entry">
+        <div class="doc-info">
+          <h3>Project Logbook</h3>
+          <p>A day-to-day running log of the project from beginning to end — including notes on testing, wiring, motor tuning, amplifier troubleshooting, and general progress updates. This isn’t just a list of dates: the logbook was kept with enough detail that it doubles as a technical diary of the development process.</p>
+          <p>It includes sketches, early circuit ideas, failed tests, working solutions, and thoughts on component choices and next steps.</p>
+          <p class="author">Author: Mark Roe</p>
+          <a href="assets/pdfs/IDT Project Logbook.pdf" class="button" target="_blank">Download PDF</a>
+        </div>
+        <div class="doc-preview">
+          <img src="assets/previews/logbook-preview.png" alt="Preview of logbook first page" />
+        </div>
+      </div>
+
+      <div class="doc-entry">
+        <div class="doc-info">
+          <h3>Project Proposal</h3>
+          <p>The proposal sets the scene for the project and lays out what we planned to build, why it mattered, and how we were going to go about it. It includes component overviews, a timeline, theoretical justifications, and anticipated outcomes.</p>
+          <p>While some things changed along the way (as they always do), the proposal served as the foundation for the final result.</p>
+          <p class="author">Author: Mark Roe</p>
+          <a href="assets/pdfs/Project Proposal.pdf" class="button" target="_blank">Download PDF</a>
+        </div>
+        <div class="doc-preview">
+          <img src="assets/previews/proposal-preview.png" alt="Preview of proposal first page" />
+        </div>
+      </div>
+
+      <div class="doc-entry">
+        <div class="doc-info">
+          <h3>Presentation Slides</h3>
+          <p>These slides were created for an interim bench assessment partway through the build. They cover the overall plan, what had been completed at that stage, issues encountered with calibration and movement, and plans for finishing the instrument.</p>
+          <p>The tone was aimed at communicating progress and demonstrating technical understanding rather than just showing results.</p>
+          <p class="author">Author: Mark Roe, Niall Linnane, Nicole Murray</p>
+          <a href="assets/pdfs/IDT INTERIM PRESENTATION.pptx" class="button" target="_blank">Download PowerPoint</a>
+        </div>
+        <div class="doc-preview">
+          <img src="assets/gifs/IDT INTERIM PRESENTATION.gif" alt="Preview of presentation animation" />
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <h2>Project Timeline</h2>
+      <p style="text-align: center; font-size: 1.1rem; margin-bottom: 20px;">
+        Below is the provisional Gantt chart created at the start of the project, outlining the intended timeline and deliverables. While things shifted along the way, the chart helped define clear weekly milestones across design, build, testing, and documentation.
+      </p>
+      <img src="assets/images/Provisional Gantt Chart.png" alt="Project Gantt Chart" class="gantt-img">
+    </section>
+
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="assets/images/Perspective1.png" alt="Scan output 1" />
+        <img src="assets/images/Perspective2.png" alt="Scan output 2" />
+        <img src="assets/images/Perspective3.png" alt="Scan output 3" />
+        <img src="assets/images/ProfilometerPic1.jpg" alt="Device photo 1" />
+        <img src="assets/images/ProfilometerPic2.jpg" alt="Device photo 2" />
+        <img src="assets/images/ProfilometerPic3.jpg" alt="Device photo 3" />
+        <img src="assets/images/CodeSnip1.jpg" alt="Code Example 1" />
+        <img src="assets/images/CodeSnip2.jpg" alt="Code Example 2" />
+        <img src="assets/images/CodeSnip3.jpg" alt="Code Example 3" />
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+

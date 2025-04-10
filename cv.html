@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-14HMNXG7DB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-14HMNXG7DB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-14HMNXG7DB');
+  </script>
 
-  gtag('config', 'G-14HMNXG7DB');
-</script>
-<!-- Light mode favicon -->
-<link rel="icon" href="favicon.ico" media="(prefers-color-scheme: light)">
-
-<!-- Dark mode favicon -->
-<link rel="icon" href="favicon-white.ico" media="(prefers-color-scheme: dark)">
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.ico" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="favicon-white.ico" media="(prefers-color-scheme: dark)">
 
   <meta charset="UTF-8" />
   <title>CV | Mark Roe</title>
   <style>
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 1rem;
-  z-index: 1000;
-}
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+      z-index: 1000;
+    }
 
-.site-logo {
-  height: 80px; /* adjust as needed */
-  width: auto;
-  display: block;
-}
+    .site-logo {
+      height: 80px;
+      width: auto;
+      display: block;
+    }
 
     body {
       margin: 0;
@@ -41,25 +39,25 @@ header {
       color: #222;
     }
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 80px;
-  padding: 0 40px;
-  font-size: 1.55rem;
-  color: #666;
-}
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 80px;
+      padding: 0 40px;
+      font-size: 1.55rem;
+      color: #666;
+    }
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #666;
-}
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #666;
+    }
 
-nav a:hover {
-  color: #000;
-}
+    nav a:hover {
+      color: #000;
+    }
 
     .container {
       padding: 15px 60px;
@@ -72,14 +70,14 @@ nav a:hover {
       align-items: center;
       margin-bottom: 30px;
     }
- h1 {
-  font-variant: small-caps;
-  width: 900px;
-  margin: 40px auto 30px auto;
-  border-bottom: 2px solid #666;
-  padding-bottom: 10px;
-  font-size: 2.5rem;
 
+    h1 {
+      font-variant: small-caps;
+      width: 1000px;
+      margin: 40px auto 30px auto;
+      border-bottom: 2px solid #666;
+      padding-bottom: 10px;
+      font-size: 2.5rem;
     }
 
     .download-button {
@@ -110,11 +108,11 @@ nav a:hover {
   </style>
 </head>
 <body>
-<header>
-  <a href="index.html">
-    <img src="logo.png" alt="Logo" class="site-logo">
-  </a>
-</header>
+  <header>
+    <a href="index.html">
+      <img src="assets/logos/logo.png" alt="Logo" class="site-logo">
+    </a>
+  </header>
 
   <nav>
     <a href="index.html" title="Return to the homepage">Home</a>
@@ -127,14 +125,15 @@ nav a:hover {
   <div class="container">
     <div class="header">
       <h1>Curriculum Vitae</h1>
-      <a href="MarkRoe_CV.pdf" download class="download-button">Download CV (PDF)</a>
+      <a href="assets/pdfs/MarkRoe_CV.pdf" download class="download-button">Download CV (PDF)</a>
     </div>
 
     <div class="pdf-wrapper">
-      <iframe src="MarkRoe_CV.pdf" class="pdf-frame" title="Mark Roe CV"></iframe>
+      <iframe src="assets/pdfs/MarkRoe_CV.pdf" class="pdf-frame" title="Mark Roe CV"></iframe>
     </div>
   </div>
 </body>
 </html>
+
 
 

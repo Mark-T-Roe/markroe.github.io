@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-14HMNXG7DB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-14HMNXG7DB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-14HMNXG7DB');
+  </script>
 
-  gtag('config', 'G-14HMNXG7DB');
-</script>
-<!-- Light mode favicon -->
-<link rel="icon" href="favicon.ico" media="(prefers-color-scheme: light)">
-
-<!-- Dark mode favicon -->
-<link rel="icon" href="favicon-white.ico" media="(prefers-color-scheme: dark)">
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.ico" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="favicon-white.ico" media="(prefers-color-scheme: dark)">
 
   <meta charset="UTF-8" />
   <title>Portfolio | Mark Roe</title>
   <style>
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 1rem;
-  z-index: 1000;
-}
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+      z-index: 1000;
+    }
 
-.site-logo {
-  height: 80px; /* adjust as needed */
-  width: auto;
-  display: block;
-}
+    .site-logo {
+      height: 80px;
+      width: auto;
+      display: block;
+    }
 
     body {
       margin: 0;
@@ -64,17 +62,16 @@ header {
     .portfolio-container {
       max-width: 1000px;
       margin: 15px auto;
-
     }
 
-h1 {
-  font-variant: small-caps;
-  max-width: 900px;
-  margin: 55px auto 30px auto;
-  border-bottom: 2px solid #666;
-  padding-bottom: 10px;
-  text-align: center;
-  font-size: 2.5rem;
+    h1 {
+      font-variant: small-caps;
+      max-width: 1000px;
+      margin: 55px auto 30px auto;
+      border-bottom: 2px solid #666;
+      padding-bottom: 10px;
+      text-align: center;
+      font-size: 2.5rem;
     }
 
     .project {
@@ -86,14 +83,13 @@ h1 {
       padding-bottom: 40px;
     }
 
-.project img {
-  width: auto;
-  max-width: 180px;
-  max-height: 120px;
-  height: auto;
-  border-radius: 4px;
-}
-
+    .project img {
+      width: auto;
+      max-width: 180px;
+      max-height: 120px;
+      height: auto;
+      border-radius: 4px;
+    }
 
     .project-content {
       flex: 1;
@@ -127,11 +123,11 @@ h1 {
   </style>
 </head>
 <body>
-<header>
-  <a href="index.html">
-    <img src="logo.png" alt="Logo" class="site-logo">
-  </a>
-</header>
+  <header>
+    <a href="index.html">
+      <img src="assets/logos/logo.png" alt="Logo" class="site-logo">
+    </a>
+  </header>
 
   <nav>
     <a href="index.html" title="Return to the homepage">Home</a>
@@ -145,7 +141,7 @@ h1 {
     <h1>Project Portfolio</h1>
 
     <div class="project">
-      <img src="BetterScan1.png" alt="Surface Profilometer" />
+      <img src="assets/images/BetterScan1.png" alt="Surface Profilometer" />
       <div class="project-content">
         <h2><a href="profilometer.html">Surface Profilometer</a></h2>
         <p>Fully realized design team project, where a Surface Profilometer was designed, constructed and tested for the purpose of producing 3D topographies.</p>
@@ -154,7 +150,7 @@ h1 {
     </div>
 
     <div class="project">
-      <img src="elt.jpg" alt="MORFEO Simulation" />
+      <img src="assets/images/elt.jpg" alt="MORFEO Simulation" />
       <div class="project-content">
         <h2><a href="morfeo.html">MORFEO Instrument Project</a></h2>
         <p>Summer placement work on the simulation and optical analysis of the MORFEO adaptive optics system for the ELT. Focus on image modeling, resolution, and AO behavior.</p>
@@ -163,7 +159,7 @@ h1 {
     </div>
 
     <div class="project">
-      <img src="essay.jpg" alt="General Essays" />
+      <img src="assets/images/essay.jpg" alt="General Essays" />
       <div class="project-content">
         <h2><a href="essays.html">General Essays</a></h2>
         <p>A selection of short essays and reflections, covering topics in physics, philosophy of science, and scientific history.</p>
@@ -172,7 +168,7 @@ h1 {
     </div>
 
     <div class="project">
-      <img src="report.png" alt="Report Work Examples" />
+      <img src="assets/images/report.png" alt="Report Work Examples" />
       <div class="project-content">
         <h2><a href="reports.html">Report-Work Examples</a></h2>
         <p>A curated group of past academic reports, showcasing formal lab writing, structured data analysis, and uncertainty analysis using LaTeX.</p>
@@ -180,7 +176,16 @@ h1 {
       </div>
     </div>
 
+    <div class="project">
+      <img src="assets/images/gantt.png" alt="Custom Gantt Chart" />
+      <div class="project-content">
+        <h2><a href="gantt.html">Custom Gantt Chart</a></h2>
+        <p>A custom Gantt chart created from scratch to support project planning and time allocation. Designed with clear structure and soft tones for easy presentability, with the end goal of making it readily customizable for any user.</p>
+        <p class="tags">Tags: Planning, Data Visualisation, Design</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
+
 

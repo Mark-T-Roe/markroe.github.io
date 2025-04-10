@@ -2,40 +2,39 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-14HMNXG7DB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-14HMNXG7DB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-14HMNXG7DB');
+  </script>
 
-  gtag('config', 'G-14HMNXG7DB');
-</script>
-<!-- Light mode favicon -->
-<link rel="icon" href="favicon.ico" media="(prefers-color-scheme: light)">
-
-<!-- Dark mode favicon -->
-<link rel="icon" href="favicon-white.ico" media="(prefers-color-scheme: dark)">
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.ico" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="favicon-white.ico" media="(prefers-color-scheme: dark)">
 
   <meta charset="UTF-8" />
   <title>About | Mark Roe</title>
   <style>
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 1rem;
-  z-index: 1000;
-}
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+      z-index: 1000;
+    }
 
-.site-logo {
-  height: 80px; /* adjust as needed */
-  width: auto;
-  display: block;
-}
+    .site-logo {
+      height: 80px;
+      width: auto;
+      display: block;
+    }
 
     * {
       box-sizing: border-box;
     }
+
     body {
       margin: 0px;
       padding: 0;
@@ -46,25 +45,25 @@ header {
       overflow: hidden;
     }
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 80px;
-  padding: 0 40px;
-  font-size: 1.55rem;
-  color: #666;
-}
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 80px;
+      padding: 0 40px;
+      font-size: 1.55rem;
+      color: #666;
+    }
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #666;
-}
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #666;
+    }
 
-nav a:hover {
-  color: #000;
-}
+    nav a:hover {
+      color: #000;
+    }
 
     .container {
       display: flex;
@@ -86,19 +85,17 @@ nav a:hover {
       border-bottom: 2px solid #666;
       padding-bottom: 8px;
     }
-.about-title {
-  text-align: center;
-}
 
+    .about-title {
+      text-align: center;
+    }
 
     p {
       font-size: 1.2rem;
       margin: 20px 0;
       line-height: 1.6;
-  text-align: justify;
-  hyphens: auto;
-}
-
+      text-align: justify;
+      hyphens: auto;
     }
 
     .highlight {
@@ -112,7 +109,7 @@ nav a:hover {
       flex-direction: column;
       align-items: center;
       position: relative;
-      top: 25px; /* Moves the whole image section upward slightly */
+      top: 25px;
     }
 
     .profile-pic {
@@ -134,71 +131,73 @@ nav a:hover {
       width: 100px;
       height: auto;
       object-fit: contain;
-      border-radius: 4px; /* Just a gentle curve, not circular */
+      border-radius: 4px;
     }
-.logo-solo {
-  margin-top: 20px;
-}
 
-.logo-solo img {
-  width: 260px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 4px;
-}
+    .logo-solo {
+      margin-top: 20px;
+    }
 
+    .logo-solo img {
+      width: 260px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
-<header>
-  <a href="index.html">
-    <img src="logo.png" alt="Logo" class="site-logo">
-  </a>
-</header>
+  <header>
+    <a href="index.html">
+      <img src="assets/logos/logo.png" alt="Logo" class="site-logo">
+    </a>
+  </header>
 
-<nav>
-  <a href="index.html" title="Return to the homepage">Home</a>
-  <a href="about.html" title="Learn more about me">About</a>
-  <a href="portfolio.html" title="View my project work">Portfolio</a>
-  <a href="cv.html" title="See my academic and work history">CV</a>
-  <a href="contact.html" title="Get in touch">Contact</a>
-</nav>
+  <nav>
+    <a href="index.html" title="Return to the homepage">Home</a>
+    <a href="about.html" title="Learn more about me">About</a>
+    <a href="portfolio.html" title="View my project work">Portfolio</a>
+    <a href="cv.html" title="See my academic and work history">CV</a>
+    <a href="contact.html" title="Get in touch">Contact</a>
+  </nav>
+
   <div class="container">
     <div class="text-section">
       <h1 class="about-title">About Me</h1>
-<p>
-  I’m <span class="highlight">Mark Roe</span>, a third-year undergraduate studying Physics & Instrumentation at <span class="highlight">Atlantic Technological University (ATU), Galway</span>. My academic journey began at <span class="highlight">Trinity College Dublin (TCD)</span>, where I studied Physics through the BA in Physical Sciences. I later transferred into third year of the <span class="highlight">BSc in Physics and Instrumentation</span> at ATU, where I’m currently enrolled.
-</p>
+      <p>
+        I’m <span class="highlight">Mark Roe</span>, a third-year undergraduate studying Physics & Instrumentation at <span class="highlight">Atlantic Technological University (ATU), Galway</span>. My academic journey began at <span class="highlight">Trinity College Dublin (TCD)</span>, where I studied Physics through the BA in Physical Sciences. I later transferred into third year of the BSc in Physics and Instrumentation at ATU, where I’m currently enrolled.
+      </p>
 
-<p>
-  Most recently, I’ve undertaken a summer research placement at the <span class="highlight">Centre for Astronomy, University of Galway</span>, working on simulations for the <span class="highlight">Extremely Large Telescope (ELT)</span> and its <span class="highlight">MORFEO adaptive optics system</span>.
-</p>
+      <p>
+        Most recently, I’ve undertaken a summer research placement at the <span class="highlight">Centre for Astronomy, University of Galway (UG)</span>, working on simulations for the Extremely Large Telescope (ELT) and its MORFEO adaptive optics system.
+      </p>
 
-<p>
-  My academic interests span a wide range of physics topics, as well as broader questions related to science and its role in the world. Lately, I’ve explored several small-scale design projects — including a <span class="highlight">beam deflection surface profilometer</span> and a <span class="highlight">food spoilage sensor</span> (a work in progress).
-</p>
+      <p>
+        My academic interests span a wide range of physics topics, as well as broader questions related to science and its role in the world. Lately, I’ve explored several small-scale design projects — including a beam deflection surface profilometer and a food spoilage sensor (a work in progress).
+      </p>
 
-<p>
-  This site serves as a home for those projects, along with essays, reports, and other work I’ve produced during my studies. Feel free to explore — and don’t hesitate to get in touch if you have any questions.
-</p>
-
+      <p>
+        This site serves as a home for those projects, along with essays, reports, and other work I’ve produced during my studies. Feel free to explore — and don’t hesitate to get in touch if you have any questions.
+      </p>
     </div>
 
-<div class="image-section">
-  <img src="me.jpg" alt="Mark Roe" class="profile-pic" title="This is me — Mark Roe" />
-  
-  <div class="logo-row">
-    <img src="atu.png" alt="ATU logo" title="Atlantic Technological University" />
-    <img src="tcd.png" alt="Trinity logo" title="Trinity College Dublin" />
-    <img src="ug.png" alt="Galway logo" title="University of Galway" />
+    <div class="image-section">
+      <img src="assets/images/me.jpg" alt="Mark Roe" class="profile-pic" title="This is me — Mark Roe" />
+      
+      <div class="logo-row">
+        <img src="assets/logos/atu.png" alt="ATU logo" title="Atlantic Technological University" />
+        <img src="assets/logos/tcd.png" alt="Trinity logo" title="Trinity College Dublin" />
+        <img src="assets/logos/ug.png" alt="Galway logo" title="University of Galway" />
+      </div>
+      
+      <div class="logo-solo">
+        <img src="assets/logos/CFA.jpg" alt="Centre for Astronomy logo" title="Centre for Astronomy, University of Galway" />
+      </div>
+    </div>
   </div>
-  
-  <div class="logo-solo">
-    <img src="CFA.jpg" alt="Centre for Astronomy logo" title="Centre for Astronomy, University of Galway" />
-  </div>
-</div>
 </body>
 </html>
+
 
 
 
